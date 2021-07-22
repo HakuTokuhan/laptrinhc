@@ -24,7 +24,7 @@ int main()
     printf("\n%d / %d = %f", a, b, thuong);
 
     // Phép (%)
-    int PT = a %0 b;
+    int PT = a % b;
     printf("\n%d %% %d = %d", a, b, PT);
 
 }
