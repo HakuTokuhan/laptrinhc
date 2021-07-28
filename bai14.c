@@ -1,8 +1,8 @@
 #include <stdio.h>
-#define Gioi "\nXep loai: Gioi"
-#define Kha "\nXep loai: Kha"
+#define GIOI "\nXep loai: Gioi"
+#define KHA "\nXep loai: Kha"
 #define TB "\nXep loai: Trung binh"
-#define Yeu "\nXep loai: Yeu"
+#define YEU "\nXep loai: Yeu"
 
 int main()
 {
@@ -15,16 +15,16 @@ int main()
     printf("\nDiem trung binh: %.2f", tb);
 
     if (tb < 4) {
-        printf(Yeu);
+        printf(YEU);
     }
     else if (tb < 6.5) {
         printf(TB);
     }
     else if (tb < 8) {
-        printf(Kha);
+        printf(KHA);
     }
     else {
-        printf(Gioi);
+        printf(GIOI);
     }
     
 }
