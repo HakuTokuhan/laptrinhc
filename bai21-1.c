@@ -16,7 +16,7 @@ int main()
         a /= 10;
     }
 
-    if (kt == true) {
+    if (kt) {
         printf("\nToan chu so chan");
     }
     else {
