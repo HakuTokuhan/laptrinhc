@@ -11,4 +11,5 @@ int main()
     printf("Nhap n: ");
     scanf("%d", &n);
     printf("\nSo luong chu so cua %d la: %d", n, Dem(n));
+    return 0;
 }
