@@ -15,4 +15,5 @@ int main()
     printf("Nhap b: "); scanf("%d", &b);
 
     printf("\nUCLN cua %d va %d la: %d", a, b, UCLN(a, b));
+    return 0;
 }
