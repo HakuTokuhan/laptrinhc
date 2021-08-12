@@ -16,4 +16,5 @@ int main()
     printf("Nhap so lan lap: ");
     scanf("%d", &n);
     Lap(n);
+    return 0;
 }
