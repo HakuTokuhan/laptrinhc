@@ -12,4 +12,5 @@ int main()
     int n;
     printf("Nhap n: "); scanf("%d", &n);
     printf("\nTong cac so tu 1 -> %d la: %d", n, TinhTong(n));
+    return 0;
 }
