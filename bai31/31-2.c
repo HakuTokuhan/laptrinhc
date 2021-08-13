@@ -6,7 +6,7 @@ void Dao(int n) {
     bool xet = true;
     while (n > 0) {
         tam = n % 10;
-        if (xet == true) {
+        if (xet) {
             if ( tam != 0) {
                 printf("%d", tam);
                 xet = false;
