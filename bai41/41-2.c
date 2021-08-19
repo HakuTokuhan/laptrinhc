@@ -27,7 +27,7 @@ int TimKiem(int a[], int n, int v) {
 int main()
 {
     int arr[MAX];
-    int n;
+    int n, vitri;
     printf("\nNhap so luong phan tu: ");
     do{
         scanf("%d", &n);
@@ -43,6 +43,9 @@ int main()
     int v;
     printf("\nNhap vao gia tri can tim: ");
     scanf("%d", &v);
-    printf("\nTim thay so %d tai chi so ", v);
-    TimKiem(arr, n, v);
+    vitri = TimKiem(arr, n, v);
+    if (vitri != -1) {
+        printf("\nTim thay so %d tai chi so %d ", v, vitri);
+    }
+    else printf("\nKhong tim thay so %d trong mang", v);
 }
