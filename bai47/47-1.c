@@ -23,8 +23,8 @@ void bubbleShort(int a[], int n) {
                 haveSwap = true;
             }
         }
-        // if (haveSwap == false);
-        // break;
+        if (haveSwap == false)
+            break;
     }
 }
 
