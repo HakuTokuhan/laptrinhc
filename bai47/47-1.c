@@ -1,23 +1,30 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+/*
 void swap(int x, int y) {
     int  temp = x;
     x = y;
     y = temp;
 }
+*/
 
 void bubbleShort(int a[], int n) {
     int i, j;
     bool haveSwap = false;
     for (i = 0; i < n - 1; i++) {
         haveSwap = false;
-        for (j = 0; j < n - i - 1; j++) {
-            swap(a[j], a[j + 1]);;
-            haveSwap = true;
+        for (j = 0; j < n - 1 - i; j++) {
+            // swap(a[j], a[j + 1]);
+            if (a[j] > a[j+1]){
+                int temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+                haveSwap = true;
+            }
         }
-        if (haveSwap == false);
-        break;
+        // if (haveSwap == false);
+        // break;
     }
 }
 

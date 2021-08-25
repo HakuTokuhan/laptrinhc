@@ -1,27 +1,34 @@
 #include <stdio.h>
 
+/*
 void swap(int xp, int yp) {
     int temp = xp;
     xp = yp;
     yp = temp;    
 }
+*/
 
 void selectionSort(int a[], int n) {
     int i, j, min_idx;
     for (i = 0; i < n - 1; i++) {
         min_idx = i;
-        for (j = i + 1; j < n; j++)
-            if (a[j] < a[min_idx])
+        for (j = i + 1; j < n; j++) {
+            if (a[j] < a[min_idx]) {
                 min_idx = j;
-            swap(a[min_idx], a[i]);
+                // swap(&a[min_idx], &a[i]);
+                int temp = a[j];
+                a[j] = a[i];
+                a[i] = temp;
+            }
+        }
     }
 }
 
 void printArray(int a[], int size) {
     int i;
     for (i = 0; i < size; i++)
-        printf("%d", a[i]);
-    printf("n");
+        printf("%d ", a[i]);
+    printf("\n");
 }
 
 int main()
