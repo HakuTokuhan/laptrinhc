@@ -20,7 +20,7 @@ int main(void)
     int x = 10;
     int result = binarySearch(a, 0, n - 1, x);
     if (result == -1)
-        printf("%d xuat hien tai chi so %d", x, result);
+        printf("Khong tim thay %d", x);
     else
         printf("%d xuat hien tai chi so %d", x, result);
     return 0;
