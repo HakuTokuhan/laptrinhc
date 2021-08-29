@@ -1,6 +1,8 @@
 #include <stdio.h>
 #define MAX 1000
 
+int n;
+
 void NhapMang(int a[], int n) {
     for (int i = 0; i < n; i++) {
         printf("Nhap so thu %d: ", i);
@@ -42,7 +44,6 @@ void XoaPhanTu(int a[], int n, int pos) {
 int main()
 {
     int a[MAX];
-    int n;
     printf("\nNhap so luong phan tu: ");
     scanf("%d", &n);
     NhapMang(a, n);
