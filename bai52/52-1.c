@@ -63,5 +63,6 @@ int main()
     XoaPhanTu(a, pos);
     printf("\nMang sau khi xoa: ");
     XuatMang(a);
-    printf("\nDone!"); 
+    printf("\nDone!");
+    return 0;
 }
