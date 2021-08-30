@@ -3,20 +3,20 @@
 
 int n;
 
-void NhapMang(int a[], int n) {
+void NhapMang(int a[]) {
     for (int i = 0; i < n; i++) {
         printf("Nhap so thu %d: ", i);
         scanf("%d", &a[i]);
-    }
+    } 
 }
  
-void XuatMang(int a[], int n) {
+void XuatMang(int a[]) {
     for (int i = 0; i < n; i++) {
         printf("%4d", a[i]);
     }
 }
 
-void ThemPhanTu(int a[], int n, int val, int pos) {
+void ThemPhanTu(int a[], int val, int pos) {
     if (n >= MAX)
         return;
     if (pos < 0)
@@ -29,7 +29,7 @@ void ThemPhanTu(int a[], int n, int val, int pos) {
     ++n;
 }
 
-void XoaPhanTu(int a[], int n, int pos) {
+void XoaPhanTu(int a[], int pos) {
     if ( n <= 0)
         return;
     if (pos < 0)
@@ -46,22 +46,22 @@ int main()
     int a[MAX];
     printf("\nNhap so luong phan tu: ");
     scanf("%d", &n);
-    NhapMang(a, n);
-    XuatMang(a, n);
+    NhapMang(a);
+    XuatMang(a);
     printf("\n=======THEM PHAN TU======\n");
     int val, pos;
     printf("\nNhap so can them: ");
     scanf("%d", &val);
     printf("\nNhap vi tri muon chen: ");
     scanf("%d", &pos);
-    ThemPhanTu(a, n, val, pos);
+    ThemPhanTu(a, val, pos);
     printf("\nMang sau khi them: ");
-    XuatMang(a, n);
+    XuatMang(a);
     printf("\n=======XOA PHAN TU======\n");
     printf("\nNhap vi tri muon xoa: ");
     scanf("%d", &pos);
-    XoaPhanTu(a, n, pos);
+    XoaPhanTu(a, pos);
     printf("\nMang sau khi xoa: ");
-    XuatMang(a, n);
+    XuatMang(a);
     printf("\nDone!"); 
 }
