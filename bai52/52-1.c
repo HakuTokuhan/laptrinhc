@@ -48,6 +48,7 @@ int main()
     scanf("%d", &n);
     NhapMang(a);
     XuatMang(a);
+    
     printf("\n=======THEM PHAN TU======\n");
     int val, pos;
     printf("\nNhap so can them: ");
@@ -57,6 +58,7 @@ int main()
     ThemPhanTu(a, val, pos);
     printf("\nMang sau khi them: ");
     XuatMang(a);
+   
     printf("\n=======XOA PHAN TU======\n");
     printf("\nNhap vi tri muon xoa: ");
     scanf("%d", &pos);
@@ -64,5 +66,6 @@ int main()
     printf("\nMang sau khi xoa: ");
     XuatMang(a);
     printf("\nDone!");
+    
     return 0;
 }
