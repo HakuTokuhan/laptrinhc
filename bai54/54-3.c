@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-void NhapMaTran(int a[][100], int m, int n) {
+const int MAX = 100;
+
+void NhapMaTran(int a[][MAX], int m, int n) {
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++) {
             printf("A[%d][%d] = ", i, j);
@@ -8,7 +10,7 @@ void NhapMaTran(int a[][100], int m, int n) {
         }
 }
 
-void XuatMaTran(int a[][100], int m, int n) {
+void XuatMaTran(int a[][MAX], int m, int n) {
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++)
             printf("%d\t", a[i][j]);
@@ -16,7 +18,7 @@ void XuatMaTran(int a[][100], int m, int n) {
     }
 }
 
-void ChuyenVi(int a[][100], int m, int n, int b[][100]) {
+void ChuyenVi(int a[][MAX], int m, int n, int b[][100]) {
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
             b[j][i] = a[i][j];
@@ -24,7 +26,7 @@ void ChuyenVi(int a[][100], int m, int n, int b[][100]) {
 
 int main()
 {
-    int a[100][100], b[100][100];
+    int a[MAX][MAX], b[MAX][MAX];
     int m, n;
     printf("Nhap so hang m: "); scanf("%d", &m);
     printf("Nhap so cot n: "); scanf("%d", &n);
