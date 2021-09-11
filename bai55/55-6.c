@@ -28,7 +28,7 @@ int TinhTong(int a[][MAX], int m, int n) {
 }
 
 int Min(int a[][MAX], int m, int n) {
-    int min = 999999;
+    int min = -1;
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
             if (a[i][j] % 3 == 0)
@@ -60,7 +60,7 @@ int main()
     XuatMaTran(a, m, n);
     printf("\nTong cac phan tu la: %d", TinhTong(a, m, n));
     int min = Min(a, m ,n);
-    if (min == 999999)
+    if (min == -1)
         printf("\nTrong mang vua nhap khong co so chia het cho 3");
     else
         printf("\nSo nho nhat trong cac so chia het cho 3 co trong day la %d", min);
