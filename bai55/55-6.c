@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
+#include <stdbool.h>
 
 const int MAX = 50;
 
@@ -29,11 +30,18 @@ int TinhTong(int a[][MAX], int m, int n) {
 
 int Min(int a[][MAX], int m, int n) {
     int min = -1;
+    bool check = false;
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
-            if (a[i][j] % 3 == 0)
-                if (min > a[i][j])
+            if (a[i][j] % 3 == 0) {
+                if (!check) {
                     min = a[i][j];
+                    check = true;
+                }
+                else
+                    if (min > a[i][j])
+                        min = a[i][j];
+            }
     return min;
 }
 
