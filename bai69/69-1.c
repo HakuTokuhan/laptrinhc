@@ -8,7 +8,7 @@ struct SinhVien {
     char gt[5];
     int age;
     float dT, dL, dH;
-    float dtb = 0;
+    float dtb = 0; 
 };
 
 typedef SinhVien SV;
